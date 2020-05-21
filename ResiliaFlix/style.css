@@ -1,0 +1,55 @@
+body {
+	background: #ffebb1;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	background: #111111;
+	align-items: baseline;
+}
+
+.principal {
+	color: #f1ca5d;
+	height: 40px;
+	font-size: 30px;
+}
+
+.menu {
+	color: #111111;
+}
+
+nav {
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+	background-color: #f1ca5d;
+	border-radius: 3px;
+	margin: 0 10px;
+	padding: 2px 14px;
+}
+
+footer {
+	background: #111111;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.social-media-nav {
+	display: flex;
+	justify-content: center;
+}
+
+.social-media-icon {
+	width: 2%;
+	margin: 10px 0.7% 5px;
+}
+
+.ltda {
+	color: #f1ca5d;
+	margin: 5px 0;
+	text-align: center;
+}
