@@ -1,5 +1,6 @@
 body {
 	background: #ffebb1;
+	height: 100%;
 }
 
 header {
@@ -10,7 +11,7 @@ header {
 }
 
 .principal {
-	color: #f1ca5d;
+	color: #efef00;
 	height: 40px;
 	font-size: 30px;
 }
@@ -25,17 +26,30 @@ nav {
 
 a {
 	text-decoration: none;
-	background-color: #f1ca5d;
+	background-color: #efef00;
 	border-radius: 3px;
 	margin: 0 10px;
 	padding: 2px 14px;
+}
+
+.catalogo-lista {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: 0 15%;
+}
+
+.catalogo-item {
+	width: 18%;
+	margin: 1%;
+	border-radius: 2%;
 }
 
 footer {
 	background: #111111;
 	width: 100%;
 	position: absolute;
-	bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .social-media-nav {
@@ -49,7 +63,7 @@ footer {
 }
 
 .ltda {
-	color: #f1ca5d;
+	color: #efef00;
 	margin: 5px 0;
 	text-align: center;
 }
