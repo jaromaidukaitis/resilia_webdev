@@ -1,30 +1,26 @@
 body {
 	background: #ffebb1;
-	height: 100%;
 }
 
 header {
 	display: flex;
 	justify-content: space-around;
 	background: #111111;
-	align-items: baseline;
+	align-items: flex-end;
+	height: 50px;
 }
 
 .principal {
 	color: #efef00;
-	height: 40px;
 	font-size: 30px;
 }
 
 .menu {
-	color: #111111;
-}
-
-nav {
 	display: flex;
+	margin-bottom: 2%;
 }
 
-a {
+.menu-item {
 	text-decoration: none;
 	background-color: #efef00;
 	border-radius: 3px;
@@ -33,10 +29,11 @@ a {
 }
 
 .catalogo-lista {
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	width: 70%;
-	margin: 0 15%;
+	margin: 0 auto;
 }
 
 .catalogo-item {
@@ -66,4 +63,69 @@ footer {
 	color: #efef00;
 	margin: 5px 0;
 	text-align: center;
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+	.catalogo-lista {
+		width: 95%;
+	}
+
+	.catalogo-item {
+		width: 23%;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 699px) {
+	.catalogo-lista {
+		width: 95%;
+	}
+
+	.catalogo-item {
+		width: 31.3%;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 499px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+		height: 100px;
+	}
+
+	.principal {
+		font-size: 30px;
+	}
+
+	.catalogo-lista {
+		width: 98%;
+	}
+
+	.catalogo-item {
+		width: 48%;
+	}
+}
+
+@media (max-width: 359px) {
+	header {
+		flex-direction: column;
+		height: 150px;
+		align-items: center;
+	}
+
+	.menu {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	li {
+		margin: 5px auto;
+	}
+
+	.catalogo-lista {
+		width: 99%;
+	}
+
+	.catalogo-item {
+		width: 98%;
+	}
 }
