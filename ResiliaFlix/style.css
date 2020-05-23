@@ -42,6 +42,10 @@ header {
 	border-radius: 2%;
 }
 
+.catalogo-lista-texto {
+	display: none;
+}
+
 footer {
 	background: #111111;
 	width: 100%;
@@ -122,10 +126,21 @@ footer {
 	}
 
 	.catalogo-lista {
-		width: 99%;
+		display: none;
 	}
 
-	.catalogo-item {
-		width: 98%;
+	.catalogo-lista-texto {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.catalogo-nome {
+		color: #111111;
+		font-size: 20px;
+		margin: 10px 10px 10px 10px;
+		padding: 0 0 5px 0;
+		text-align: center;
+		border: 5px solid #111111;
+		border-width: 0 1px 5px 1px;
 	}
 }
